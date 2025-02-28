@@ -22,10 +22,26 @@ function App1() {
       event.preventDefault();
     };
     
+    const handleTouchStart = (event) => {
+      startY = event.touches[0].clientY;
+    };
+
+    const handleTouchMove = (event) => {
+      const touchY = event.touches[0].clientY;
+      const scrollDirection = touchY < startY ? 1 : -1;
+      currentSection = Math.min(Math.max(currentSection + scrollDirection, 0), sections.length - 1);
+      scrollToSection(currentSection);
+      startY = touchY;
+    };
+    
     window.addEventListener('wheel', handleScroll, { passive: false });
+    window.addEventListener('touchstart', handleTouchStart, { passive: false });
+    window.addEventListener('touchmove', handleTouchMove, { passive: false });
     
     return () => {
       window.removeEventListener('wheel', handleScroll);
+      window.removeEventListener('touchstart', handleTouchStart);
+      window.removeEventListener('touchmove', handleTouchMove);
     };
   }, []);
   
@@ -37,7 +53,6 @@ function App1() {
       <div className="section">
         <CardsSection />
       </div>
-
       <div className="section">
         <FeatureHighlight />
       </div>
