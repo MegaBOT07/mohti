@@ -6,7 +6,7 @@ const HeroSection = () => {
     <div className="hero-section">
       <div className="video-container">
         <video autoPlay loop muted>
-          <source autoPlay src="./public/video/bg.mp4" type="video/mp4" />
+          <source autoPlay src="https://videos.pexels.com/video-files/8979417/8979417-uhd_2560_1440_30fps.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       </div>

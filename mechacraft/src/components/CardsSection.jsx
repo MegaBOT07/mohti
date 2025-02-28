@@ -10,12 +10,12 @@ const CardsSection = memo(() => {
       text: "Empower your IoT projects with versatile microcontrollers.",
     },
     {
-      image: "https://images.pexels.com/photos/30721139/pexels-photo-30721139/free-photo-of-elegant-black-dress-fashion-portrait-in-studio.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
+      image: "https://images.pexels.com/photos/6153741/pexels-photo-6153741.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
       alt: "Robotics",
       text: "Revolutionize tasks with cutting-edge robotics solutions.",
     },
     {
-      image: "./public/assets/3.jpeg",
+      image: "https://adsgrill.com/wp-content/uploads/2024/12/Untitled-design-3.png",
       alt: "AR/VR",
       text: "Experience next-gen AR/VR technology for innovation.",
     },
@@ -25,12 +25,12 @@ const CardsSection = memo(() => {
       text: "Innovate with advanced drone technology for various applications.",
     },
     {
-      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwHKWHFwPiGRjwqAXzI3DeAiCXB0PspjZ1WD5C5oQPkuRqhDUy",
+      image: "https://images.pexels.com/photos/1337247/pexels-photo-1337247.jpeg?cs=srgb&dl=pexels-garrettmorrow-1337247.jpg&fm=jpg",
       alt: "Gaming",
       text: "Immerse in the future of gaming with our tech solutions.",
     },
     {
-      image: "./src/assets/6.jpeg",
+      image: "https://images.pexels.com/photos/8386364/pexels-photo-8386364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "AI Automation",
       text: "Transform industries with AI-driven automation solutions.",
     },
