@@ -5,7 +5,7 @@ const CardsSection = memo(() => {
   // List of card items
   const cardItems = [
     {
-      image: "./src/assets/1.jpeg",
+      image: "https://images.pexels.com/photos/4709362/pexels-photo-4709362.jpeg",
       alt: "Microcontroller",
       text: "Empower your IoT projects with versatile microcontrollers.",
     },
