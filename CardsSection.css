@@ -1,0 +1,104 @@
+/* Cards section styling */
+.cards-section {
+  text-align: center;
+  height: 100vh; /* Full window height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  background-color: #ffffff;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Card container styling - Display cards in a row */
+.card-container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.card-item {
+  flex: 1 1 calc(16.66%); /* Make each card take up 1/6 of the row */
+  box-sizing: border-box;
+  transition: flex 0.5s ease; /* Smoother transition */
+}
+
+.card-item:hover {
+  flex: 1 1 calc(50%); /* Hovered card expands to 50% */
+}
+
+.card {
+  width: 100%; /* Make each card take full width of the column */
+  height: 100%; /* Ensure the card fills the height of the container */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.5s ease, box-shadow 0.5s ease, filter 0.5s ease;
+  filter: brightness(0.9); /* Slightly bright */
+}
+
+.card:hover {
+  filter: brightness(1.1); /* Brighter on hover */
+}
+
+.card-image {
+  width: 100%;
+  height: 100%; /* Fill entire card */
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.card-description {
+  position: absolute;
+  bottom: 100px; /* Slightly above the preview button */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent; /* Remove background */
+  color: #fff;
+  padding: 0;
+  border: none;
+  font-size: 1rem;
+  z-index: 1; /* Ensure it appears over the image */
+}
+
+.preview-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px; /* Bigger button */
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Increase font size */
+  display: none; /* Hidden by default */
+  transition: background-color 0.5s ease;
+  z-index: 1; /* Ensure it appears over the image */
+}
+
+/* Hover effect */
+.card:hover .preview-button {
+  display: block; /* Show learn more button on hover */
+}
+
+/* Hover effect for button */
+.preview-button:hover {
+  background-color: #0056b3;
+}
+
+/* Text styling (Outside of card) */
+.card-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px; /* Space between the card and text */
+  color: #333;
+}

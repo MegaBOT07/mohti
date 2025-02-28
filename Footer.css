@@ -1,0 +1,43 @@
+.footer {
+  background-color: #1b1b1b; /* Dark background */
+  color: white;
+  padding: 60px 20px; /* Increased padding for more space */
+  text-align: center;
+  position: relative;
+  height: 100vh;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+.stat {
+  font-size: 2rem; /* Increased font size */
+  font-weight: bold;
+}
+
+.stat-number {
+  font-size: 3rem; /* Larger font size for the number */
+  color: #007bff; /* Accent color for the numbers */
+}
+
+.testimonials-section {
+  width: 25%;
+  margin-bottom: 2rem;
+}
+
+.partners-section {
+  width: 100%;
+  margin-bottom: 2rem;
+}
