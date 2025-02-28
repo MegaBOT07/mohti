@@ -15,17 +15,17 @@ const CardsSection = memo(() => {
       text: "Revolutionize tasks with cutting-edge robotics solutions.",
     },
     {
-      image: "./src/assets/3.jpeg",
+      image: "./public/assets/3.jpeg",
       alt: "AR/VR",
       text: "Experience next-gen AR/VR technology for innovation.",
     },
     {
-      image: "./src/assets/4.jpeg",
+      image: "https://images.pexels.com/photos/4402618/pexels-photo-4402618.jpeg?cs=srgb&dl=pexels-quirva-4402618.jpg&fm=jpg",
       alt: "Drones",
       text: "Innovate with advanced drone technology for various applications.",
     },
     {
-      image: "./src/assets/5.jpeg",
+      image: "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRwHKWHFwPiGRjwqAXzI3DeAiCXB0PspjZ1WD5C5oQPkuRqhDUy",
       alt: "Gaming",
       text: "Immerse in the future of gaming with our tech solutions.",
     },
