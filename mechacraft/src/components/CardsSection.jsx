@@ -10,7 +10,7 @@ const CardsSection = memo(() => {
       text: "Empower your IoT projects with versatile microcontrollers.",
     },
     {
-      image: "./src/assets/2.jpeg",
+      image: "https://images.pexels.com/photos/30721139/pexels-photo-30721139/free-photo-of-elegant-black-dress-fashion-portrait-in-studio.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load",
       alt: "Robotics",
       text: "Revolutionize tasks with cutting-edge robotics solutions.",
     },
