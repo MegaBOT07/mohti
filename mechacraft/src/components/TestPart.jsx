@@ -45,7 +45,7 @@ const logos = [
   'https://mechacraft.in/wp-content/uploads/2024/07/srijan-1-768x849.png',
   'https://mechacraft.in/wp-content/uploads/2024/07/robotics-club-1-1-768x768.png',
   'https://mechacraft.in/wp-content/uploads/2024/07/mc-global-school.jpeg-768x768.png',
-  'https://mechacraft.in/wp-content/uploads/2024/07/mc-global-school.jpeg-768x768.png'
+  'https://mechacraft.in/wp-content/uploads/2024/07/sarthak-iti-1-768x768.png'
 ];
 
 
