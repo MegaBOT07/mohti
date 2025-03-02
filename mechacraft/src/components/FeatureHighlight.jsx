@@ -27,7 +27,8 @@ const FeatureHighlight = () => {
         <div className="footer-container">
           <div className="footer-item">
             <h2>Address</h2>
-            <p>123 MechaCraft Avenue, Tech City, TC 12345</p>
+            <p>25, Ganesh Nagar Vistar Sodala, Jaipur Rajasthan 302019</p>
+            <p>+91 9983878999</p>
           </div>
           <div className="footer-item">
             <h2>Join Us</h2>

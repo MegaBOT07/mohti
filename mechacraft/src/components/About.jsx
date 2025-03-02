@@ -64,8 +64,7 @@ const About = () => {
             <section className="about-vision">
                 <h2 className="section-title">Our Vision for the Future</h2>
                 <p className="vision-statement">
-                    We envision a world seamlessly interconnected by IoT, where technology empowers people, enhances sustainability, and fosters a smarter, more efficient global ecosystem.
-                    We are dedicated to being a driving force in this evolution, creating a future where connectivity enriches every aspect of life.
+                Mechacraft Technologies, founded in May 2024, is committed to providing innovative industrial technical solutions. Our goal is to bridge the gap between education and practical application, particularly in the field of robotics and mechanical engineering.
                 </p>
             </section>
 

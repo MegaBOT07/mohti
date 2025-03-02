@@ -6,7 +6,7 @@
 /* Join Us Section */
 .join-us-section {
   background-color: #1b1b1b; /* Black background */
-  padding: 100px;
+  padding: 100px 100px 64px;
   color: #ffffff; /* White text color */
 }
 .feature-container{
@@ -70,7 +70,7 @@
 .footer-container {
   display: flex;
   justify-content: space-around;
-  padding: 0px;
+  padding: 0px 50px;
  }
 
 .footer-item {

@@ -1,7 +1,6 @@
 /* FullPage sections should take up the full height of the screen */
 #fullpage {
   height: 100vh;
-  overflow: hidden;
 }
 
 .section {
