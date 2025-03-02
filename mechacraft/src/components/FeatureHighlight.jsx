@@ -10,14 +10,13 @@ const FeatureHighlight = () => {
           
           {/* Left Section - Image */}
           <div className="feature-image">
-            <img src="https://images.pexels.com/photos/7868836/pexels-photo-7868836.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="MechaCraft Team" />
+            <img src="https://images.pexels.com/photos/9242844/pexels-photo-9242844.jpeg" alt="MechaCraft Team" />
           </div>
 
           {/* Right Section - Content */}
           <div className="feature-content">
             <h1>Transform your vision with <span>MechaCraft</span>'s expertise.</h1>
             <p>Join forces with MechaCraft to revolutionize your business through the power of innovation and cutting-edge IoT solutions.</p>
-            <button className="cta-button">Connect with Us</button>
           </div>
         </div>
       </section>
@@ -32,7 +31,6 @@ const FeatureHighlight = () => {
           <div className="footer-item">
             <h2>Join Us</h2>
             <p>Become a part of the MechaCraft community and stay updated with our latest innovations.</p>
-            <button className="join-button">Join Now</button>
           </div>
           <div className="footer-item">
             <h2>Useful Links</h2>

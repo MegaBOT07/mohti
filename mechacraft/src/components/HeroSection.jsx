@@ -1,5 +1,6 @@
 import React from "react";
 import "./HeroSection.css"; 
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -15,7 +16,7 @@ const HeroSection = () => {
       <div className="hero-content">
         <h1>Welcome to Mechacraft</h1>
         <p>Innovative IoT solutions for a smarter tomorrow.</p>
-        <button className="cta-button">Learn More</button>
+        <button className="cta-button"><Link to="/about">learn More</Link></button>
       </div>
     </div>
   );

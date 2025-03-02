@@ -1,0 +1,272 @@
+/* About.css - Blue, White, Black Theme */
+:root {
+    /* Color Palette - Blue, White, Black */
+    --primary-background: #000000;       /* Black primary background */
+    --secondary-background: #1a1a1a;     /* Slightly lighter black for sections */
+    --primary-text: #ffffff;           /* White text for main content */
+    --secondary-text: #d0d0d0;         /* Light gray for supporting text */
+    --accent-color: #007bff;           /* Strong blue accent color (Bootstrap primary blue) */
+    --accent-hover: #0056b3;           /* Darker blue for hover effects */
+    --divider-color: #333333;          /* Dark gray divider */
+  
+    /* Typography (unchanged) */
+    --font-family: 'Roboto', sans-serif;
+    --heading-font-weight: 700;
+    --body-font-weight: 400;
+    --header-font-size: 3.0rem;
+    --section-title-font-size: 2.4rem;
+    --body-font-size: 1.1rem;
+  
+    /* Spacing and Layout (unchanged) */
+    --section-padding-vertical: 60px;
+    --section-padding-horizontal: 30px;
+    --container-max-width: 1200px;
+    --border-radius: 8px;
+    --animation-duration: 0.8s;
+    --animation-easing: ease-out;
+  }
+  
+  /* Reset and Base Styles (unchanged) */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .about-container {
+    background-color: var(--primary-background);
+    color: var(--primary-text);
+    padding: 0;
+    margin: 0 auto;
+    max-width: var(--container-max-width);
+  }
+  
+  /* Header Section (unchanged, except accent color) */
+  .about-header {
+    text-align: center;
+    padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+    animation: fadeInDown var(--animation-duration) var(--animation-easing);
+  }
+  
+  .about-header h1 {
+    font-size: var(--header-font-size);
+    color: var(--accent-color); /* Blue accent color for header */
+    margin-bottom: 10px;
+    font-weight: var(--heading-font-weight);
+  }
+  
+  .about-header .header-tagline {
+    font-size: 1.2rem;
+    color: var(--secondary-text);
+  }
+  
+  /* Intro Section (unchanged, except background and accent color) */
+  .about-intro {
+    display: flex;
+    align-items: center;
+    padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+    background-color: var(--secondary-background); /* Darker background for intro */
+    border-radius: var(--border-radius);
+    margin: 20px var(--section-padding-horizontal);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp var(--animation-duration) var(--animation-easing);
+  }
+  
+  .intro-content {
+    flex: 1.5;
+    padding-right: 40px;
+  }
+  
+  .intro-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--border-radius);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .intro-image img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Section Titles (unchanged, except accent color) */
+  .section-title {
+    font-size: var(--section-title-font-size);
+    color: var(--accent-color); /* Blue accent color for section titles */
+    margin-bottom: 25px;
+    font-weight: var(--heading-font-weight);
+  }
+  
+  /* General Paragraph Text (unchanged) */
+  p {
+    font-size: var(--body-font-size);
+    color: var(--secondary-text);
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-weight: var(--body-font-weight);
+  }
+  
+  /* Values Section (unchanged, except icon and strong text color) */
+  .about-values {
+    padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+    animation: fadeInUp var(--animation-duration) var(--animation-easing);
+  }
+  
+  .about-values .values-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-values .value-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 25px;
+  }
+  
+  .about-values .value-icon {
+    font-size: 2rem;
+    color: var(--accent-color); /* Blue accent color for icons */
+    margin-right: 20px;
+    margin-top: 8px;
+  }
+  
+  .about-values .value-text {
+    font-size: var(--body-font-size);
+    color: var(--secondary-text);
+    line-height: 1.7;
+  }
+  .about-values .value-text strong {
+    color: var(--primary-text); /* White for strong text in values */
+    font-weight: var(--heading-font-weight);
+  }
+  
+  /* Vision Section (unchanged, except background and accent color) */
+  .about-vision {
+    padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+    background-color: var(--secondary-background); /* Darker background for vision */
+    border-radius: var(--border-radius);
+    margin: 20px var(--section-padding-horizontal);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: fadeInUp var(--animation-duration) var(--animation-easing);
+  }
+  
+  .about-vision .vision-statement {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Contact Section (unchanged, except accent color for link) */
+  .about-contact {
+    padding: var(--section-padding-vertical) var(--section-padding-horizontal);
+    animation: fadeInUp var(--animation-duration) var(--animation-easing);
+    text-align: center;
+  }
+  
+  .about-contact .contact-prompt {
+    font-size: var(--body-font-size);
+    color: var(--secondary-text);
+    line-height: 1.8;
+  }
+  
+  .about-contact .contact-link {
+    color: var(--accent-color); /* Blue accent color for contact link */
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .about-contact .contact-link:hover {
+    color: var(--accent-hover); /* Darker blue on hover for link */
+    text-decoration: underline;
+  }
+  
+  /* Footer Section (unchanged) */
+  .about-footer {
+    text-align: center;
+    padding: 30px var(--section-padding-horizontal);
+    border-top: 1px solid var(--divider-color);
+    margin-top: 60px;
+    font-size: 0.9rem;
+    color: var(--secondary-text);
+  }
+  
+  /* Animations (unchanged) */
+  @keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design (unchanged) */
+  @media (max-width: 768px) {
+    .about-header {
+        padding: var(--section-padding-vertical) 20px;
+    }
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+    .about-intro {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+        margin: 15px 20px;
+    }
+    .intro-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+    .about-values,
+    .about-vision,
+    .about-contact {
+        padding: var(--section-padding-vertical) 20px;
+    }
+    .about-vision {
+        text-align: left;
+    }
+    .about-contact {
+        text-align: left;
+    }
+    .about-footer {
+        padding: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .about-header h1 {
+        font-size: 2.2rem;
+    }
+    .section-title {
+        font-size: 2rem;
+    }
+    p, .about-values .value-text, .about-vision .vision-statement, .about-contact .contact-prompt {
+        font-size: 1rem;
+    }
+  }

@@ -1,52 +1,86 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation (if using React Router)
+import { Link } from "react-router-dom";
 import "./About.css";
+const aboutUsIntroImage = "./src/assets/3.jpeg"; // Import intro image (replace placeholder path)
 
 const About = () => {
-  return (
-    <div className="about-container">
-      <header className="about-header">
-        <h1>About Us</h1>
-        <p>Your trusted partner in IoT solutions</p>
-      </header>
+    return (
+        <div className="about-container">
+            <header className="about-header">
+                <h1>About Our Company</h1>
+                <p className="header-tagline">We Connect the Physical and Digital Worlds with IoT Innovation</p>
+            </header>
 
-      <section className="about-intro">
-        <h2>What We Do</h2>
-        <p>
-          At <strong>Your Company Name</strong>, we specialize in delivering cutting-edge IoT solutions that empower businesses to streamline operations, enhance productivity, and create smarter environments.
-        </p>
-        <p>
-          Our team of experts builds innovative systems using smart devices and cloud technologies, making your operations more efficient and connected than ever before.
-        </p>
-      </section>
+            <section className="about-intro">
+                <div className="intro-content">
+                    <h2 className="section-title">Driven by Innovation, Rooted in Expertise</h2>
+                    <p>
+                        At <strong>[Your Company Name]</strong>, we are passionate about leveraging the power of the Internet of Things to transform businesses and enrich lives.
+                        With a deep understanding of IoT technologies and a commitment to excellence, we deliver tailored solutions that drive efficiency, sustainability, and growth.
+                    </p>
+                    <p>
+                        Our multidisciplinary team combines expertise in hardware, software, and cloud computing to create intelligent, connected systems. We pride ourselves on
+                        our collaborative approach, working closely with our clients to understand their unique challenges and deliver impactful results.
+                    </p>
+                    <p>
+                        From smart agriculture to intelligent manufacturing, we are at the forefront of IoT innovation, helping our partners navigate the complexities of the digital age and unlock new possibilities.
+                    </p>
+                </div>
+                <div className="intro-image">
+                    <img src={aboutUsIntroImage} alt="Team collaborating on IoT project" />
+                </div>
+            </section>
 
-      <section className="about-values">
-        <h2>Our Values</h2>
-        <ul>
-          <li><strong>Innovation:</strong> We lead with the latest technologies to create scalable and adaptive solutions.</li>
-          <li><strong>Quality:</strong> We are committed to providing high-performance and reliable products for our clients.</li>
-          <li><strong>Collaboration:</strong> We work closely with our clients to ensure that their needs are met at every step of the way.</li>
-          <li><strong>Security:</strong> We prioritize the security and privacy of your data and systems, ensuring peace of mind for all our clients.</li>
-        </ul>
-      </section>
+            <section className="about-values">
+                <h2 className="section-title">Our Core Values</h2>
+                <ul className="values-list">
+                    <li className="value-item">
+                        <i className="fas fa-rocket value-icon"></i> {/* Font Awesome Icon - Innovation */}
+                        <div className="value-text">
+                            <strong>Innovation:</strong> We are relentless in our pursuit of cutting-edge technologies and creative solutions, always striving to push the boundaries of what's possible.
+                        </div>
+                    </li>
+                    <li className="value-item">
+                        <i className="fas fa-shield-alt value-icon"></i> {/* Font Awesome Icon - Quality */}
+                        <div className="value-text">
+                            <strong>Quality:</strong> We uphold the highest standards of quality in everything we do, ensuring robust, reliable, and high-performing IoT solutions.
+                        </div>
+                    </li>
+                    <li className="value-item">
+                        <i className="fas fa-users value-icon"></i>     {/* Font Awesome Icon - Collaboration */}
+                        <div className="value-text">
+                            <strong>Collaboration:</strong> We believe in the power of partnership, working closely with our clients and stakeholders to achieve shared success and build lasting relationships.
+                        </div>
+                    </li>
+                    <li className="value-item">
+                        <i className="fas fa-lock value-icon"></i>      {/* Font Awesome Icon - Security */}
+                        <div className="value-text">
+                            <strong>Security:</strong> We are deeply committed to the security and privacy of data, implementing rigorous measures to protect our clients' information and ensure trust.
+                        </div>
+                    </li>
+                </ul>
+            </section>
 
-      <section className="about-vision">
-        <h2>Our Vision</h2>
-        <p>
-          We envision a future where IoT enables seamless connections, smarter decisions, and greater convenience in every aspect of life. Our goal is to make your world more connected, automated, and intelligent.
-        </p>
-      </section>
+            <section className="about-vision">
+                <h2 className="section-title">Our Vision for the Future</h2>
+                <p className="vision-statement">
+                    We envision a world seamlessly interconnected by IoT, where technology empowers people, enhances sustainability, and fosters a smarter, more efficient global ecosystem.
+                    We are dedicated to being a driving force in this evolution, creating a future where connectivity enriches every aspect of life.
+                </p>
+            </section>
 
-      <section className="about-contact">
-        <h2>Get in Touch</h2>
-        <p>Want to know more about how we can help your business with IoT solutions? <Link to="/contact">Contact us</Link> today!</p>
-      </section>
+            <section className="about-contact">
+                <h2 className="section-title">Let's Connect</h2>
+                <p className="contact-prompt">
+                    Ready to explore how IoT can transform your business? We'd love to hear from you. <Link to="/ContactUs" className="contact-link">Contact us today</Link> to start the conversation.
+                </p>
+            </section>
 
-      <footer className="about-footer">
-        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-      </footer>
-    </div>
-  );
+            <footer className="about-footer">
+                <p>&copy; 2025 MechaCraft. All rights reserved.</p>
+            </footer>
+        </div>
+    );
 };
 
 export default About;
