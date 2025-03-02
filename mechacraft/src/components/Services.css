@@ -47,7 +47,7 @@
   }
   
   .service-item.content-first {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
   
   .service-item.image-first {
@@ -87,8 +87,8 @@
   }
   
   .service-image img {
-    max-width: 100%;
-    height: auto;
+    max-height: 400px;
+    width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease;
@@ -100,10 +100,9 @@
   
   .services-footer {
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #333;
-  }
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
   
   .services-footer p {
     font-size: 0.9em;

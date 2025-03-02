@@ -1,9 +1,9 @@
 import React, { memo, useState } from "react";
 import "./CardsSection.css"; // Import your CSS file for this section
-
+import { Link } from "react-router-dom";
 const CardsSection = memo(() => {
   // List of card items
-  const cardItems = [
+const cardItems = [
     {
       image: "https://images.pexels.com/photos/4709362/pexels-photo-4709362.jpeg",
       alt: "Microcontroller",
@@ -50,7 +50,7 @@ const CardsSection = memo(() => {
                   loading="lazy" // Lazy load image
                 />
                 <div className="card-description">{item.text}</div>
-                <div className="preview-button">Learn More</div>
+                <div className="preview-button"><Link to="/services">learn More</Link></div>
               </div>
               <div className="card-text">{item.alt}</div>
             </div>

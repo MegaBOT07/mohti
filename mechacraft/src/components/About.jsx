@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
-const aboutUsIntroImage = "./src/assets/3.jpeg"; // Import intro image (replace placeholder path)
+const aboutUsIntroImage = "https://images.pexels.com/photos/4709387/pexels-photo-4709387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"; // Import intro image (replace placeholder path)
 
 const About = () => {
     return (
@@ -15,7 +15,7 @@ const About = () => {
                 <div className="intro-content">
                     <h2 className="section-title">Driven by Innovation, Rooted in Expertise</h2>
                     <p>
-                        At <strong>[Your Company Name]</strong>, we are passionate about leveraging the power of the Internet of Things to transform businesses and enrich lives.
+                        At <strong>Mechacraft</strong>, we are passionate about leveraging the power of the Internet of Things to transform businesses and enrich lives.
                         With a deep understanding of IoT technologies and a commitment to excellence, we deliver tailored solutions that drive efficiency, sustainability, and growth.
                     </p>
                     <p>

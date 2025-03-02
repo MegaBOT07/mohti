@@ -38,9 +38,9 @@
   .about-container {
     background-color: var(--primary-background);
     color: var(--primary-text);
-    padding: 0;
-    margin: 0 auto;
-    max-width: var(--container-max-width);
+    padding: 0px;
+    margin: 0px 0px;
+    
   }
   
   /* Header Section (unchanged, except accent color) */
