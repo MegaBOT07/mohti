@@ -1,178 +1,163 @@
-/* Common Styles */
 body {
-    font-family: 'Arial, sans-serif';
-    background-color: #1b1b1b; /* Dark background */
-    color: white; /* White text */
-  }
-  
-  /* Feature Highlight Section */
-  .feature-highlight {
-    background-color: #1b1b1b; /* Dark background */
-    color: white; /* Text color */
-    padding: 0;
-    text-align: left; /* Align text to the left */
-    position: relative;
-    height: 100vh;
-  }
-  
-  .feature-container1 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; /* Space between elements */
-    padding: 100px 100px 100px 100px;
-    align-items: center;
-  }
-  
-  /* Stats Section */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 50px; /* Gap between stats */
-    margin: 50px 0 0 50px; /* Margin for stats section */
-  }
-  
-  .stat {
-    font-size: 2rem;
-    font-weight: bold;
-    position: relative;
-  }
-  
-  .stat-number {
-    font-size: 3rem; /* Larger font size for the number */
-    color: #007bff; /* Accent color for the numbers */
-  }
-  
-  /* Counting animation */
-  @keyframes count {
-    from {
-      counter-reset: number 0;
-    }
-    to {
-      counter-reset: number var(--number);
-    }
-  }
-  
-  /* Testimonials Section */
-  .testimonials-section {
-    background: #1b1b1b; /* Dark background */
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto; /* Align to the right of the parent container */
-    position: relative;
-    flex-direction: column;
-  }
-  
-  .testimonial-card {
-    /* width: 100%; */
-    /* height: 100%; */
-    width: 342px;
-    height: 350px;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 0px 0px 0px 0px;
-    text-align: center;
+  font-family: 'Arial, sans-serif';
+  background-color: #1b1b1b;
+  color: white;
 }
-.testimonial-image {
+
+/* Feature Highlight Section */
+.feature-highlight {
+  background-color: #1b1b1b;
+  color: white;
+  text-align: left;
   position: relative;
-  top: 0px;
+  height: 100vh;
+}
+
+.feature-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px;
+}
+
+/* Stats Section */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin: 50px 0 0 50px;
+}
+
+.stat {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.stat-number {
+  font-size: 3rem;
+  color: #007bff;
+}
+
+/* Counting Animation */
+@keyframes count {
+  from {
+    counter-reset: number 0;
+  }
+  to {
+    counter-reset: number var(--number);
+  }
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background: #1b1b1b;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.testimonial-card {
+  width: 342px;
+  height: 350px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.testimonial-image {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
-  
-  .testimonial-message {
-    position: relative;
-    top: 0px;
-    margin-bottom: 0px;
-    display: block;
-    height: 60px;
-    font-size: 16px;
-    color: #000000;
+
+.testimonial-message {
+  display: block;
+  height: 60px;
+  font-size: 16px;
+  color: #000000;
 }
-  
-  /* Carousel Indicators */
-  .carousel-indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 4rem;
+
+/* Carousel Indicators */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
 }
-  
-  .indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ccc;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.indicator.active {
+  background-color: #007bff;
+}
+
+.indicator:hover {
+  background-color: #0056b3;
+}
+
+/* Partners Section */
+.partners-heading {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.partners-section {
+  background: white;
+  display: flex;
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  width: calc(150% + 50px);
+  animation: scroll 20s linear infinite;
+}
+
+.logo-container {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.partners-heading {display: block;
+  width: 100%; /* Make it span the width of its parent container */
+  position: relative;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 20px 0; /* Add a vertical margin to create separation */
+  color: rgb(0, 0, 0); /* Use consistent color with the theme */
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  
-  .indicator.active {
-    background-color: #007bff;
-  }
-  
-  .indicator:hover {
-    background-color: #0056b3;
-  }
-  
-  .partners-heading {
-    z-index: 1;
-    top: -70px;
-    z-index: 1;
-    position: relative;
-    left: 50%;
+  50% {
     transform: translateX(-50%);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 20px; /* Adjust the spacing as needed */
   }
-  
-  .partners-section p {
-    display: block;
-    color: black;
+  100% {
+    transform: translateX(-100%);
   }
-  
-  .partners-section {
-    background: white;
-    position: relative;
-    display: flex;
-    width: 100%;
-    padding: 0px 0px;
-    background-color: none;
-  }
-  
-  .logos {
-    display: flex;
-    width: calc(150% + 50px);
-    animation: scroll 20s linear infinite;
-  }
-  
-  .logo-container {
-    flex: 0 0 20%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 10px;
-  }
-  
-  .logo {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(-50%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
-  }
+}

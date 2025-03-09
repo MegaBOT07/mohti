@@ -1,18 +1,18 @@
 /* Navbar styling */
 .navbar {
-  position: absolute; /* Keep navbar positioned over the hero section */
+  width: 95.3%; /* Ensure full width for all screens */
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
-  width: 100%;
   z-index: 2;
   display: flex;
   justify-content: center; /* Space between the logo and links */
   align-items: center;
-  padding: 20px 30px; /* Add padding to the top and sides */
+  padding: 20px 30px;
   background-color: rgba(0, 0, 0, 0); /* Fully transparent background */
   backdrop-filter: blur(8px); /* Blur effect for the background */
-  transition: all 0.3s ease; /* Smooth transition */
+  transition: all 0.3s ease; /* Smooth transition for effects */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
@@ -30,6 +30,9 @@
   display: flex;
   justify-content: flex-end; /* Align links to the right */
   align-items: center;
+  transition: all 0.3s ease; /* Smooth animation for appearance/disappearance */
+  opacity: 1; /* Initially visible */
+  transform: translateY(0); /* Default position */
 }
 
 /* Navbar list item styling */
@@ -42,7 +45,7 @@
   color: #fff; /* White color for the text */
   text-decoration: none;
   font-size: 1.1em;
-  padding: 10px 0; /* Adjust padding for better spacing */
+  padding: 10px 0;
   display: block;
 }
 
@@ -52,11 +55,52 @@
   text-decoration: underline;
 }
 
-/* Ensuring navbar is not fixed */
-body {
-  margin: 0;
-  padding: 0;
+/* Menu Toggle Button */
+.menu-toggle {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  color: #fff;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
 }
-html {
-  scroll-behavior: smooth;
+
+/* Smooth animation for smaller screens */
+@media (max-width: 768px) {
+  .navbar{
+    width: 85%;
+  }
+  .navbar ul {
+    width:100%; /* Ensure full-width menu */
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.9); /* Dark background for the menu */
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease; /* Smooth transition for visibility */
+    opacity: 0; /* Start invisible */
+    transform: translateY(-20px); /* Move slightly upwards initially */
+    pointer-events: none; /* Prevent clicks when hidden */
+  }
+
+  .navbar ul.open {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Default position */
+    pointer-events: auto; /* Allow clicks */
+  }
+
+  .menu-toggle {
+    display: block; /* Show toggle button */
+  }
+
+  .logo {
+    margin-right: auto; /* Push logo to the left */
+  }
+
+  .navbar li {
+    margin: 10px 0; /* Vertical spacing for items */
+  }
 }

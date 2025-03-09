@@ -89,7 +89,9 @@ const logos = [
 const PartnersSection = () => {
   return (
     <>
-      <p className="partners-heading">Partners</p>
+      <div class="partners-heading">
+        Partners
+      </div>
       <div className="partners-section">
         <div className="logos">
           {[...logos, ...logos].map((logo, index) => (

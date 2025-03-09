@@ -15,9 +15,9 @@ const cardItems = [
       text: "Revolutionize tasks with cutting-edge robotics solutions.",
     },
     {
-      image: "https://adsgrill.com/wp-content/uploads/2024/12/Untitled-design-3.png",
-      alt: "AR/VR",
-      text: "Experience next-gen AR/VR technology for innovation.",
+      image: "https://images.pexels.com/photos/2518861/pexels-photo-2518861.jpeg?auto=compress&cs=tinysrgb&w=800",
+      alt: "Agriculture",
+      text: "Improves efficiency and productivity in farming practices.",
     },
     {
       image: "https://images.pexels.com/photos/4402618/pexels-photo-4402618.jpeg?cs=srgb&dl=pexels-quirva-4402618.jpg&fm=jpg",
