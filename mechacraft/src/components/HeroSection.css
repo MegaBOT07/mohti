@@ -15,6 +15,10 @@ html {
   scroll-behavior: smooth; /* Optional smooth scrolling */
 }
 
+.hero-content strong {
+  color: #00ff40;
+}
+
 
 /* Hero section styling */
 .hero-section {
@@ -59,6 +63,19 @@ html {
   animation: fadeIn 2s ease-out forwards; /* Smooth fade-in on initial render */
 }
 
+/* Typing animation */
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: white; }
+}
+
+
+
 /* Heading styling */
 .hero-content h1 {
   font-size: 4rem;
@@ -78,7 +95,7 @@ html {
 }
 
 /* CTA button styling */
-.hero-content .cta-button {
+.hero-content .button1 {
   background-color: #007bff;
   color: white;
   padding: 10px 20px;
@@ -90,7 +107,7 @@ html {
   animation: fadeIn 2s ease-out 1.5s forwards; /* Smooth fade-in with delay */
 }
 
-.hero-content .cta-button:hover {
+.hero-content .button1:hover {
   background-color: #0056b3;
 }
 
@@ -107,14 +124,16 @@ html {
 /* Responsive adjustments for smaller screens */
 @media (max-width: 768px) {
   .hero-content h1 {
+    padding:10px 10px;
     font-size: 2.5rem; /* Smaller font for heading */
   }
 
   .hero-content p {
-    font-size: 1.2rem; /* Smaller font for paragraph */
+    padding:10px 10px;
+    font-size: 1.5rem; /* Smaller font for paragraph */
   }
 
-  .hero-content .cta-button {
+  .hero-content .button1:hover {
     font-size: 1rem; /* Smaller button */
   }
 }

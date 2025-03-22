@@ -85,13 +85,9 @@ const logos = [
   'https://mechacraft.in/wp-content/uploads/2024/07/sarthak-iti-1-768x768.png'
 ];
 
-
 const PartnersSection = () => {
   return (
     <>
-      <div class="partners-heading">
-        Partners
-      </div>
       <div className="partners-section">
         <div className="logos">
           {[...logos, ...logos].map((logo, index) => (
@@ -150,6 +146,7 @@ const TestPart = () => {
   return (
     <section className="feature-highlight" id="footer">
       <div className="feature-container1">
+        
         {/* Stats Section */}
         <div className={`stats ${isInView ? 'animate' : ''}`}>
           <div className="stat">
@@ -169,6 +166,7 @@ const TestPart = () => {
           <TestimonialsSection1 />
         </div>
       </div>
+      <h1>Partners</h1>
       <div className="partners-section">
         <PartnersSection />
       </div>

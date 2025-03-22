@@ -106,3 +106,59 @@
   background-color: #0056b3;
 }
 
+.cards-section.mobile {
+  height: 100vh; /* Adjust height for mobile */
+  padding: 0; /* Remove padding for mobile view */
+}
+
+.cards-section.mobile .card-container {
+  flex-direction: column; /* Stack cards vertically */
+  align-items: stretch; /* Stretch cards to full width */
+}
+
+.cards-section.mobile .card-item {
+  flex: 1 1 auto; /* Normal card size */
+  width: 100%; /* Make cards take up full width */
+  margin: 0; /* Remove margin */
+  transition: height 0.5s ease; /* Smooth transition for height */
+  height: 50px; /* Initial height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.cards-section.mobile .card-item.expanded {
+  height: 350px; /* Expanded height */
+}
+
+.cards-section.mobile .card-item:hover {
+  flex: 1 1 auto; /* No expansion on hover */
+}
+
+.cards-section.mobile .card {
+  transition: none; /* Disable transition */
+  box-shadow: none; /* Remove shadow */
+}
+
+.cards-section.mobile .card:hover {
+  filter: brightness(0.9); /* No change on hover */
+}
+
+.cards-section.mobile .card-image {
+  transition: none; /* Disable transition */
+  height: 100%; /* Make image fill the card */
+  object-fit: cover; /* Cover the card */
+}
+
+.cards-section.mobile .card-description {
+  bottom: 20px; /* Adjust position */
+}
+
+.cards-section.mobile .preview-button {
+  position: relative;
+  top: -230px;
+  width: 92px;
+  left: 0px;
+  display: block;
+  transform: none;
+  margin: 10px auto;
+}
+

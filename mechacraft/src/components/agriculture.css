@@ -1,0 +1,44 @@
+.agriculture-container {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+    background-image: url('./assets/team.jpeg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.agriculture-title {
+    color: #006400; /* Dark Green */
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.agriculture-subtitle {
+    color: #228B22; /* Forest Green */
+    font-size: 2em;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.agriculture-container p {
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.agriculture-image {
+    width: 10%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.agriculture-text {
+    font-size: 1.3em;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}

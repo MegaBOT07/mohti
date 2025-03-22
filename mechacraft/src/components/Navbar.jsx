@@ -9,6 +9,10 @@ function NavBar() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   // Close the menu when clicking outside
   const handleClickOutside = (event) => {
     if (!event.target.closest('.navbar')) {
@@ -37,10 +41,10 @@ function NavBar() {
         {isMenuOpen ? '✖' : '☰'} {/* Hamburger or Cross icon */}
       </button>
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/Services">Services</Link></li>
-        <li><Link to="/ContactUs">ContactUs</Link></li>
+        <li><Link to="/" onClick={closeMenu}>Home</Link></li>
+        <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+        <li><Link to="/Services" onClick={closeMenu}>Services</Link></li>
+        <li><Link to="/ContactUs" onClick={closeMenu}>ContactUs</Link></li>
       </ul>
     </nav>
   );

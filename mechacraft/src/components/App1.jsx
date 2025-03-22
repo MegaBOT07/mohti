@@ -3,6 +3,7 @@ import HeroSection from './HeroSection';
 import CardsSection from './CardsSection';
 import TestPart from './TestPart';
 import FeatureHighlight from './FeatureHighlight';
+import Agriculture from './agriculture';
 
 import './App1.css'; // Import your styles
 
@@ -59,6 +60,9 @@ function App1() {
       <div className="section">
         <HeroSection />
       </div>
+      {/* <div className="section">
+        <Agriculture />
+      </div> */}
       <div className="section">
         <CardsSection />
       </div>

@@ -1,6 +1,6 @@
 /* Navbar styling */
 .navbar {
-  width: 95.3%; /* Ensure full width for all screens */
+  width: 100%; /* Ensure full width for all screens */
   position: absolute;
   top: 0;
   left: 0;
@@ -16,7 +16,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.logo {
+.navbar img {
   width: 100px;
   height: auto;
 }
@@ -65,13 +65,16 @@
   z-index: 3;
 }
 
+
+
 /* Smooth animation for smaller screens */
 @media (max-width: 768px) {
-  .logo{
-    width: 40%;
+  .navbar img{
+    width: 50%;
 
   }
   .navbar{
+    background: linear-gradient(to right, rgb(255, 255, 255), rgb(88, 72, 238));
     width: 85%;
   }
   .navbar ul {
@@ -90,16 +93,17 @@
   }
 
   .navbar ul.open {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Default position */
-    pointer-events: auto; /* Allow clicks */
-  }
+        opacity: 1;
+        width: 90%;
+        transform: translate(20px, 20px);
+        pointer-events: auto;
+    }
 
   .menu-toggle {
     display: block; /* Show toggle button */
   }
 
-  .logo {
+  .navbar img{
     margin-right: auto; /* Push logo to the left */
   }
 

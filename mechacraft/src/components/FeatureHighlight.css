@@ -6,7 +6,7 @@
 /* Join Us Section */
 .join-us-section {
   background-color: #1b1b1b; /* Black background */
-  padding: 100px 100px 64px;
+  padding: 100px 100px 97px;
   color: #ffffff; /* White text color */
 }
 .feature-container{
@@ -31,7 +31,7 @@
 .feature-content h1 {
   font-size: 36px; /* Larger font size */
   color: #ffffff;
-  margin-bottom: 20px;
+  margin: 20px;
 }
 
 .feature-content h1 span {
@@ -39,9 +39,9 @@
 }
 
 .feature-content p {
-  font-size: 18px; /* Bigger font size */
+  font-size: 20px; /* Bigger font size */
   color: #ffffff;
-  margin: 10px 0;
+  margin: 20px;
 }
 
 .cta-button {
@@ -70,7 +70,7 @@
 .footer-container {
   display: flex;
   justify-content: space-around;
-  padding: 0px 50px;
+  padding: 50px 0px;
  }
 
 .footer-item {
@@ -123,7 +123,7 @@
 
 .footer-bottom {
   border-top: 1px solid #333; /* Separator line */
-  padding: 2px 0px;
+  padding: 1px 0px;
 }
 
 

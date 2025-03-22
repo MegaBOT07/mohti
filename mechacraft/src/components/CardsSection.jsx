@@ -1,9 +1,26 @@
-import React, { memo, useState } from "react";
+import React, { memo, useState, useEffect } from "react";
 import "./CardsSection.css"; // Import your CSS file for this section
 import { Link } from "react-router-dom";
+
 const CardsSection = memo(() => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [expandedCard, setExpandedCard] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const handleCardClick = (index) => {
+    setExpandedCard(expandedCard === index ? null : index);
+  };
+
   // List of card items
-const cardItems = [
+  const cardItems = [
     {
       image: "https://images.pexels.com/photos/4709362/pexels-photo-4709362.jpeg",
       alt: "Microcontroller",
@@ -38,10 +55,14 @@ const cardItems = [
 
   return (
     <section id="services">
-      <div className="cards-section">
+      <div className={`cards-section ${isMobile ? "mobile" : ""}`}>
         <div className="card-container">
           {cardItems.map((item, index) => (
-            <div className="card-item" key={index}>
+            <div
+              className={`card-item ${expandedCard === index ? "expanded" : expandedCard !== null ? "collapsed" : ""}`}
+              key={index}
+              onClick={() => handleCardClick(index)}
+            >
               <div className="card">
                 <img
                   src={item.image}
@@ -49,10 +70,15 @@ const cardItems = [
                   className="card-image"
                   loading="lazy" // Lazy load image
                 />
+                <div className="card-text">{item.alt}</div>
+                {isMobile && expandedCard === index && (
+                  <div className="preview-button"><Link to="/services">Learn More</Link></div>
+                )}
                 <div className="card-description">{item.text}</div>
-                <div className="preview-button"><Link to="/services">learn More</Link></div>
+                {!isMobile && (
+                  <div className="preview-button"><Link to="/services">Learn More</Link></div>
+                )}
               </div>
-              <div className="card-text">{item.alt}</div>
             </div>
           ))}
         </div>

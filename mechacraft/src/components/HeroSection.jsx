@@ -15,8 +15,8 @@ const HeroSection = () => {
       {/* Hero content with text */}
       <div className="hero-content">
         <h1>Welcome to Mechacraft</h1>
-        <p>Innovative IoT solutions in Agriculture Technology</p>
-        <button className="cta-button"><Link to="/about">learn More</Link></button>
+        <p>Innovative IoT solutions in <strong>Agriculture Technology</strong></p>
+        <button className="button1"><Link to="/about">learn More</Link></button>
       </div>
     </div>
   );
