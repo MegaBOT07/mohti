@@ -5,9 +5,9 @@
 }
 /* Join Us Section */
 .join-us-section {
-  background-color: #1b1b1b; /* Black background */
-  padding: 100px 100px 97px;
-  color: #ffffff; /* White text color */
+  background-color: #1b1b1b;
+  padding: 43px 129px 5px 100px;
+  color: #ffffff;
 }
 .feature-container{
   display:flex;

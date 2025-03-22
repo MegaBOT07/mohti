@@ -16,11 +16,11 @@ body {
 }
 
 .feature-container1 {
-  margin: 0px 100px 0px 100px;
+  margin: 0px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; /* Space between elements */
-  padding: 150px;
+  justify-content: space-between;
+  padding: 60px;
   align-items: center;
 }
 
