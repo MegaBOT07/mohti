@@ -16,7 +16,7 @@ body {
 }
 
 .feature-container1 {
-  margin: 0px 150px 0px 150px;
+  margin: 0px 100px 0px 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between; /* Space between elements */
