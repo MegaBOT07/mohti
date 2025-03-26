@@ -42,7 +42,7 @@
 
 /* Navbar link styling */
 .navbar a {
-  color: #000000; /* White color for the text */
+  color: black; /* White color for the text */
   text-decoration: none;
   font-size: 1.1em;
   padding: 10px 0;
@@ -70,6 +70,9 @@
 
 /* Smooth animation for smaller screens */
 @media (max-width: 768px) {
+  .navbar a{
+    color: white;
+  }
   .navbar img{
     width: 50%;
 
