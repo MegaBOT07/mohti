@@ -58,23 +58,24 @@
 
 .card-description {
   position: absolute;
-  bottom: 75px; /* Slightly above the preview button */
+  bottom: 100px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: transparent; /* Remove background */
+  background-color: transparent;
+  font-weight: bold;
   color: #fff;
   padding: 0;
   border: none;
-  font-size: 1.3rem;
-  z-index: 1; /* Ensure it appears over the image */
+  font-size: 1.1rem;
+  z-index: 1;/* Ensure it appears over the image */
 }
 /* Text styling (Outside of card) */
 .card-text {
   position: relative;
-  bottom: 270px;
-  font-size: 1.6rem;
+  bottom: 361px;
+  font-size: 1.7rem;
   font-weight: bold;
-  margin-top: 10px; /* Space between the card and text */
+  margin-bottom: 10px;
   color: #ffffff;
   z-index: 1;
 }
@@ -154,11 +155,11 @@
 
 .cards-section.mobile .preview-button {
   position: relative;
-  top: -230px;
+  top: -220px;
   width: 92px;
   left: 0px;
   display: block;
   transform: none;
-  margin: 10px auto;
+  margin: -20px auto;
 }
 
