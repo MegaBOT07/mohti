@@ -79,7 +79,7 @@
   }
   .navbar{
     background: linear-gradient(135deg, #007bff, #ffffff, #4657f1);
-    width: 85%;
+    width: 86%;
   }
   .navbar ul {
     width:100%; /* Ensure full-width menu */
