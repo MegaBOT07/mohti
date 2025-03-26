@@ -32,7 +32,7 @@ const CardsSection = memo(() => {
       text: "Revolutionize tasks with cutting-edge robotics solutions.",
     },
     {
-      image: "https://images.pexels.com/photos/974316/pexels-photo-974316.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "https://images.pexels.com/photos/1382102/pexels-photo-1382102.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       alt: "Agriculture",
       text: "Improves efficiency and productivity in farming practices.",
     },
