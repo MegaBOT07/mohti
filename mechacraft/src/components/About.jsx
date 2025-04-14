@@ -1,82 +1,109 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
-const aboutUsIntroImage = "https://images.pexels.com/photos/4709387/pexels-photo-4709387.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"; // Import intro image (replace placeholder path)
 
 const About = () => {
+    const stats = [
+        { number: "150+", label: "Projects Completed" },
+        { number: "50+", label: "Educational Institutions" },
+        { number: "25+", label: "Team Members" },
+        { number: "1000+", label: "Students Empowered" }
+    ];
+
+    const expertiseAreas = [
+        {
+            title: "IoT Solutions",
+            description: "Custom IoT implementations for smart manufacturing and industrial automation",
+            icon: "🌐"
+        },
+        {
+            title: "Circuit Designing",
+            description: "Hands-on electronic circuit design and implementation for practical learning",
+            icon: "⚡"
+        },
+        {
+            title: "App Development",
+            description: "Mobile application development training and project-based learning",
+            icon: "📱"
+        },
+        {
+            title: "Web Design",
+            description: "Modern web development skills with practical project experience",
+            icon: "💻"
+        },
+        {
+            title: "Robotics Lab",
+            description: "State-of-the-art robotics laboratory setup for schools and hands-on learning",
+            icon: "🤖"
+        },
+        {
+            title: "Hands-on Training",
+            description: "Practical, interactive training sessions with real-world projects and industry-standard tools",
+            icon: "🔧"
+        },
+        {
+            title: "Smart Agriculture",
+            description: "Automated farming solutions for sustainable agriculture",
+            icon: "🌱"
+        },
+        {
+            title: "AI & ML",
+            description: "Intelligent systems and machine learning education for next-gen innovators",
+            icon: "🧠"
+        }
+    ];
+
     return (
         <div className="about-container">
-            <header className="about-header">
-                <h1>About Our Company</h1>
-                <p className="header-tagline">We Connect the Physical and Digital Worlds with IoT Innovation</p>
-            </header>
-
-            <section className="about-intro">
-                <div className="intro-content">
-                    <h2 className="section-title">Driven by Innovation, Rooted in Expertise</h2>
-                    <p>
-                        At <strong>Mechacraft</strong>, we are passionate about leveraging the power of the Internet of Things to transform businesses and enrich lives.
-                        With a deep understanding of IoT technologies and a commitment to excellence, we deliver tailored solutions that drive efficiency, sustainability, and growth.
-                    </p>
-                    <p>
-                        Our multidisciplinary team combines expertise in hardware, software, and cloud computing to create intelligent, connected systems. We pride ourselves on
-                        our collaborative approach, working closely with our clients to understand their unique challenges and deliver impactful results.
-                    </p>
-                    <p>
-                        From smart agriculture to intelligent manufacturing, we are at the forefront of IoT innovation, helping our partners navigate the complexities of the digital age and unlock new possibilities.
-                    </p>
+            <div className="hero-section">
+                <img className="background-video" src="https://images.pexels.com/photos/5265274/pexels-photo-5265274.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
+                <div className="hero-content">
+                    <h1>Empowering Learners Through Innovation</h1>
+                    <p>Building Tomorrow's Tech Leaders Today</p>
                 </div>
-                <div className="intro-image">
-                    <img src={aboutUsIntroImage} alt="Team collaborating on IoT project" />
+            </div>
+
+            <section className="mission-section">
+                <div className="content-wrap">
+                    <div className="text-content">
+                        <h2>Our Mission</h2>
+                        <p>At Mechacraft, we're dedicated to revolutionizing education through innovative technological solutions. We empower students and educators with hands-on learning experiences in robotics, programming, and digital technologies.</p>
+                        <p>Our commitment to excellence drives us to create engaging, practical learning environments that prepare students for the digital future.</p>
+                    </div>
+                    <div className="stats-container">
+                        {stats.map((stat, index) => (
+                            <div key={index} className="stat-item">
+                                <span className="stat-number">{stat.number}</span>
+                                <span className="stat-label">{stat.label}</span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </section>
 
-            <section className="about-values">
-                <h2 className="section-title">Our Core Values</h2>
-                <ul className="values-list">
-                    <li className="value-item">
-                        <i className="fas fa-rocket value-icon"></i> {/* Font Awesome Icon - Innovation */}
-                        <div className="value-text">
-                            <strong>Innovation:</strong> We are relentless in our pursuit of cutting-edge technologies and creative solutions, always striving to push the boundaries of what's possible.
+            <section className="expertise-section">
+                <h2>Our Areas of Excellence</h2>
+                <div className="expertise-grid">
+                    {expertiseAreas.map((area, index) => (
+                        <div key={index} className="expertise-card">
+                            <div className="card-icon">{area.icon}</div>
+                            <h3>{area.title}</h3>
+                            <p>{area.description}</p>
                         </div>
-                    </li>
-                    <li className="value-item">
-                        <i className="fas fa-shield-alt value-icon"></i> {/* Font Awesome Icon - Quality */}
-                        <div className="value-text">
-                            <strong>Quality:</strong> We uphold the highest standards of quality in everything we do, ensuring robust, reliable, and high-performing IoT solutions.
-                        </div>
-                    </li>
-                    <li className="value-item">
-                        <i className="fas fa-users value-icon"></i>     {/* Font Awesome Icon - Collaboration */}
-                        <div className="value-text">
-                            <strong>Collaboration:</strong> We believe in the power of partnership, working closely with our clients and stakeholders to achieve shared success and build lasting relationships.
-                        </div>
-                    </li>
-                    <li className="value-item">
-                        <i className="fas fa-lock value-icon"></i>      {/* Font Awesome Icon - Security */}
-                        <div className="value-text">
-                            <strong>Security:</strong> We are deeply committed to the security and privacy of data, implementing rigorous measures to protect our clients' information and ensure trust.
-                        </div>
-                    </li>
-                </ul>
+                    ))}
+                </div>
             </section>
 
-            <section className="about-vision">
-                <h2 className="section-title">Our Vision for the Future</h2>
-                <p className="vision-statement">
-                Mechacraft Technologies, founded in May 2024, is committed to providing innovative industrial technical solutions. Our goal is to bridge the gap between education and practical application, particularly in the field of robotics and mechanical engineering.
-                </p>
-            </section>
-
-            <section className="about-contact">
-                <h2 className="section-title">Let's Connect</h2>
-                <p className="contact-prompt">
-                    Ready to explore how IoT can transform your business? We'd love to hear from you. <Link to="/ContactUs" className="contact-link">Contact us today</Link> to start the conversation.
-                </p>
+            <section className="vision-section">
+                <div className="vision-content">
+                    <h2>Looking to the Future</h2>
+                    <p>As we look ahead, we're committed to pushing the boundaries of what's possible in technology. Our vision is to create a more connected, efficient, and sustainable world through innovative solutions.</p>
+                    <Link to="/ContactUs" className="cta-button">Start Your Journey With Us</Link>
+                </div>
             </section>
 
             <footer className="about-footer">
-                <p>&copy; 2025 MechaCraft. All rights reserved.</p>
+                <p>&copy; 2025 Mechacraft Technologies. Innovating for a Better Tomorrow.</p>
             </footer>
         </div>
     );
