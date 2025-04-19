@@ -172,7 +172,7 @@ body {
 @media (max-width: 768px) {
   .feature-container1 {
     flex-direction: column;
-    padding: 50px;
+    padding: 50px 45px;
     margin: 0px;
   }
 
