@@ -2,61 +2,63 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
-const iotAgricultureImage = "https://media.istockphoto.com/id/1155183548/photo/lawn-mower-and-jerry-can-with-gasoline-on-the-background-of-green-grass.jpg?b=1&s=612x612&w=0&k=20&c=5NZnGGf7x0N7xXSn8T_7FeWWZmsKfUh0ekFKDxQu-Fo="; // Import your images
+
+const iotAgricultureImage = "https://media.istockphoto.com/id/1155183548/photo/lawn-mower-and-jerry-can-with-gasoline-on-the-background-of-green-grass.jpg?b=1&s=612x612&w=0&k=20&c=5NZnGGf7x0N7xXSn8T_7FeWWZmsKfUh0ekFKDxQu-Fo=";
 const customSolutionsImage = "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800";
 const iotConsultingImage = "https://images.pexels.com/photos/9242836/pexels-photo-9242836.jpeg?auto=compress&cs=tinysrgb&w=800";
 const roboticsLabsImage = "https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=800";
 const arVrImage = "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800";
 const droneTechImage = "https://images.pexels.com/photos/18660495/pexels-photo-18660495/free-photo-of-view-of-dji-air-3-drone-flying-in-the-forest-in-south-of-france.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
 const homeAutomationImage = "https://media.istockphoto.com/id/1014664366/photo/smart-home-automation-remote-control-internet-technology.jpg?b=1&s=612x612&w=0&k=20&c=kb_aNkbmD9qqL43IjaIkGACHkLtYqqkMAEuo-Uc0uxU=";
+
 const Services = () => {
   const services = [
     {
       title: "Driving Agricultural and Healthcare Advancements with IoT",
       description:
-        "Revolutionizing agriculture and healthcare through Internet of Things (IoT) solutions that enable smarter operations and better outcomes.",
+        "Harness the power of IoT to transform agriculture and healthcare. We deliver smart farming solutions—like automated irrigation, crop monitoring, and livestock tracking—boosting yields and sustainability. In healthcare, our IoT systems enable real-time patient monitoring, asset tracking, and predictive maintenance for medical equipment, ensuring better outcomes and operational efficiency.",
       image: iotAgricultureImage,
-      alt: "IoT Solutions for Agriculture",
+      alt: "IoT in Agriculture and Healthcare",
     },
     {
       title: "Custom Web & App Development: Expert Consultancy and Tailored Solutions",
       description:
-        "Delivering secure, scalable, and user-friendly web and mobile applications, with expert consultancy guiding you through every stage—from concept and design to deployment and continuous optimization.",
+        "From idea to launch, we build secure, scalable, and intuitive web and mobile applications. Our team provides end-to-end consultancy, UI/UX design, robust backend development, and ongoing optimization. Whether you need an e-commerce platform, enterprise dashboard, or mobile app, we deliver solutions that drive business growth and user engagement.",
       image: customSolutionsImage,
-      alt: "Custom Web & App Development",
+      alt: "Web and App Development",
     },
     {
       title: "Drone Technology: Aerial Solutions for Modern Industries",
       description:
-        "Providing precise aerial data collection, mapping, and analysis to optimize operations across industries like agriculture, construction, and inspection.",
+        "Unlock new perspectives with our advanced drone services. We offer aerial mapping, precision agriculture, infrastructure inspection, and 3D modeling. Our drones collect high-resolution data safely and efficiently, supporting industries like agriculture, construction, mining, and utilities with actionable insights and reduced operational risks.",
       image: droneTechImage,
       alt: "Drone Technology",
     },
     {
       title: "PCB Circuit Design Lab: Precision and Innovation in Electronics",
       description:
-        "Designing high-quality, reliable, and scalable PCBs for various electronic products, from prototypes to large-scale production.",
+        "Accelerate your product development with our PCB design expertise. We create reliable, high-performance printed circuit boards for prototypes and mass production. Our services include schematic capture, layout, simulation, and manufacturing support—ensuring your electronics are robust, efficient, and ready for market.",
       image: iotConsultingImage,
       alt: "PCB Circuit Design Lab",
     },
     {
       title: "AI & Machine Learning: Smart Solutions for the Future",
       description:
-        "Leveraging AI and Machine Learning to create intelligent systems that automate processes, enhance decision-making, and drive innovation across industries like healthcare, finance, and manufacturing.",
+        "Empower your business with AI-driven automation, predictive analytics, and intelligent decision-making. We develop custom machine learning models for healthcare diagnostics, financial forecasting, industrial automation, and more. Our solutions help you uncover patterns, optimize processes, and stay ahead in a data-driven world.",
       image: arVrImage,
       alt: "AI & Machine Learning",
     },
     {
       title: "Robotics: Automation for Enhanced Efficiency",
       description:
-        "Designing and developing advanced robotics solutions to automate complex tasks, improving efficiency, accuracy, and safety in industries such as manufacturing, logistics, and healthcare.",
+        "Reimagine productivity with our robotics solutions. We design and build robots for manufacturing, logistics, agriculture, and healthcare—automating repetitive or hazardous tasks. Our systems improve accuracy, safety, and throughput, enabling your workforce to focus on higher-value activities.",
       image: roboticsLabsImage,
-      alt: "Robotics",
+      alt: "Robotics Automation",
     },
     {
       title: "Technology Consulting and Integration",
       description:
-        "Helping businesses seamlessly integrate cutting-edge technologies to boost efficiency, reduce costs, and foster innovation.",
+        "Navigate digital transformation with confidence. Our consultants help you select, implement, and integrate the right technologies—IoT, AI, cloud, automation, and more. We streamline your operations, reduce costs, and foster innovation, ensuring your business remains competitive in a rapidly evolving landscape.",
       image: homeAutomationImage,
       alt: "Technology Consulting and Integration",
     },
