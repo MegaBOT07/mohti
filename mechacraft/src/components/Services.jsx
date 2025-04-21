@@ -1,5 +1,5 @@
 // Services.js
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
 
@@ -12,6 +12,8 @@ const droneTechImage = "https://images.pexels.com/photos/18660495/pexels-photo-1
 const homeAutomationImage = "https://media.istockphoto.com/id/1014664366/photo/smart-home-automation-remote-control-internet-technology.jpg?b=1&s=612x612&w=0&k=20&c=kb_aNkbmD9qqL43IjaIkGACHkLtYqqkMAEuo-Uc0uxU=";
 
 const Services = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const services = [
     {
       title: "Driving Agricultural and Healthcare Advancements with IoT",
@@ -62,16 +64,33 @@ const Services = () => {
       image: homeAutomationImage,
       alt: "Technology Consulting and Integration",
     },
+    {
+      title: "STEM Workshops for School Students",
+      description:
+        "Empowering young minds through interactive, hands-on learning in robotics, AI, IoT, and coding. By encouraging exploration and creativity, we help students build real-world skills, spark curiosity, and grow their confidence in today’s rapidly evolving tech landscape",
+      image: homeAutomationImage,
+      alt: "Home Automation",
+    },
   ];
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    console.log("Custom Workshop Request Data:", data);
+    alert("Your request has been submitted successfully!");
+    e.target.reset();
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="services-container">
-      <header className="services-header">
+    <div className="mechacraft-services-container">
+      <header className="mechacraft-services-header">
         <h1>Our Services</h1>
         <p>Empowering Your Business with IoT Solutions</p>
       </header>
 
-      <section className="services-list">
+      <section className="mechacraft-services-list">
         {services.map((service, index) => (
           <div
             key={index}
@@ -106,7 +125,68 @@ const Services = () => {
         ))}
       </section>
 
-      <footer className="services-footer">
+      <section className="mechacraft-workshop-section">
+        <h2 className="mechacraft-workshop-title">Want to Book a Workshop?</h2>
+        <button 
+          className="mechacraft-workshop-button"
+          onClick={() => setIsModalOpen(true)}
+        >
+          Request Custom Workshop
+        </button>
+
+        {isModalOpen && (
+          <div className="mechacraft-modal-overlay" onClick={() => setIsModalOpen(false)}>
+            <div className="mechacraft-modal-content" onClick={e => e.stopPropagation()}>
+              <button 
+                className="mechacraft-modal-close"
+                onClick={() => setIsModalOpen(false)}
+              >
+                ×
+              </button>
+              <h2>Request a Custom Workshop</h2>
+              <p>Fill out the form and our team will get back to you with a customized proposal.</p>
+              
+              <form className="mechacraft-workshop-form" onSubmit={handleSubmit}>
+                <div className="mechacraft-form-group">
+                  <label>Your Name</label>
+                  <input type="text" name="name" placeholder="Full Name" required />
+                </div>
+                
+                <div className="mechacraft-form-group">
+                  <label>Your Email</label>
+                  <input type="email" name="email" placeholder="Enter valid Email" required />
+                </div>
+                
+                <div className="mechacraft-form-group">
+                  <label>Phone Number</label>
+                  <input type="tel" name="phone" placeholder="Your Phone Number" required />
+                </div>
+                
+                <div className="mechacraft-form-group">
+                  <label>Organization</label>
+                  <input type="text" name="organization" placeholder="School/College/Company" required />
+                </div>
+                
+                <div className="mechacraft-form-group">
+                  <label>Additional Details</label>
+                  <textarea
+                    name="details"
+                    rows="5"
+                    placeholder="Number of participants, preferred dates, specific requirements, etc."
+                    required
+                  ></textarea>
+                </div>
+                
+                <button type="submit" className="mechacraft-submit-button">
+                  Submit Request
+                </button>
+              </form>
+            </div>
+          </div>
+        )}
+      </section>
+
+      <footer className="mechacraft-services-footer">
         <p>&copy; 2025 MechaCraft. All rights reserved.</p>
       </footer>
     </div>

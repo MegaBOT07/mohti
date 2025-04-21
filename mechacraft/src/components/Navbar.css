@@ -10,8 +10,8 @@
   display: flex;
   justify-content: center; /* Space between the logo and links */
   align-items: center;
-  padding: 20px 30px;
-  background: linear-gradient(135deg, #007bff, #ffffff, #4657f1); /* Advanced gradient background */
+  padding: 20px 0px;
+  background: whitesmoke; /* Advanced gradient background */
   backdrop-filter: blur(8px); /* Blur effect for the background */
   transition: all 0.3s ease; /* Smooth transition for effects */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
@@ -79,7 +79,7 @@
   }
   .navbar{
     background: linear-gradient(135deg, #007bff, #ffffff, #4657f1);
-    width: 86%;
+    width: 100%;
   }
   .navbar ul {
     width:100%; /* Ensure full-width menu */
@@ -104,7 +104,8 @@
     }
 
   .menu-toggle {
-    display: block; /* Show toggle button */
+    display: block;
+    margin-right: 10px; /* Show toggle button */
   }
 
   .navbar img{

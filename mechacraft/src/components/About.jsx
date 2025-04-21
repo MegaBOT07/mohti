@@ -56,19 +56,19 @@ const About = () => {
     return (
         <div className="about-container">
             <div className="hero-section">
-                <img className="background-video" src="https://images.pexels.com/photos/5265274/pexels-photo-5265274.jpeg?auto=compress&cs=tinysrgb&w=600" alt="" />
-                <div className="hero-content">
-                    <h1>Empowering Learners Through Innovation</h1>
-                    <p>Building Tomorrow's Tech Leaders Today</p>
+                <img className="background-video" src="./assets/abt.jpeg" alt="" />
+                <div className="zero-content">
+                    <h1>About Us</h1>
+                    <p>Mechacraft Technologies is a forward-thinking tech company dedicated to innovation, education, and development in the fields of IoT, Robotics, AI, Embedded Systems, Web Development, and AgriTech. We specialize in offering practical training and workshops tailored to school and college students, aiming to bridge the gap between academic learning and industry skills.</p>
                 </div>
             </div>
 
             <section className="mission-section">
                 <div className="content-wrap">
                     <div className="text-content">
-                        <h2>Our Mission</h2>
-                        <p>At Mechacraft, we're dedicated to revolutionizing education through innovative technological solutions. We empower students and educators with hands-on learning experiences in robotics, programming, and digital technologies.</p>
-                        <p>Our commitment to excellence drives us to create engaging, practical learning environments that prepare students for the digital future.</p>
+                        <h2>Our Mission & Vision</h2>
+                        <p>At Mechacraft Technologies, we're on a mission to bridge the gap between academic knowledge and practical industry skills. </p>
+                        <p>We believe that hands-on experience is the cornerstone of effective learning in technology fields.</p>
                     </div>
                     <div className="stats-container">
                         {stats.map((stat, index) => (
@@ -103,7 +103,7 @@ const About = () => {
             </section>
 
             <footer className="about-footer">
-                <p>&copy; 2025 Mechacraft Technologies. Innovating for a Better Tomorrow.</p>
+                <p>&copy; 2025 MechaCraft. All rights reserved.</p>
             </footer>
         </div>
     );

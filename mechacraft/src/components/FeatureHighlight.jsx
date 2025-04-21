@@ -1,7 +1,7 @@
 import React from 'react';
 import './FeatureHighlight.css'; // Link to the CSS file
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Import Font Awesome
-import { faLinkedin, faFacebook, faThreads } from '@fortawesome/free-brands-svg-icons'; // Import brand icons
+import { faLinkedin, faFacebook, faThreads, faInstagram } from '@fortawesome/free-brands-svg-icons'; // Import brand icons
 
 const FeatureHighlight = () => {
   return (
@@ -11,16 +11,21 @@ const FeatureHighlight = () => {
         <div className="feature-container">
           {/* Left Section - Image */}
           <div className="feature-image">
-            <img src="https://images.pexels.com/photos/9242844/pexels-photo-9242844.jpeg" alt="MechaCraft Team" />
+            <img src="./assets/feat.jpeg" alt="MechaCraft Team" />
           </div>
 
           {/* Right Section - Content */}
           <div className="feature-content">
-            <h1>Transform your vision with <span>MechaCraft</span>'s expertise.</h1>
-            <p>Join forces with MechaCraft to revolutionize your business through the power of innovation and cutting-edge IoT solutions.</p>
+            <h1>Let’s Partner to Build the Future</h1>
+            <p>
+We invite schools and colleges to join hands with Mechacraft Technologies to empower students with the skills they need for tomorrow’s world. Our team is ready to conduct workshops, set up innovation labs, and inspire your students to dream big and build real.</p>
+<h6>Trusted by Students & Educators</h6>
+<p>We’ve successfully trained 500+ students across multiple colleges and schools in Rajasthan through internships, training camps, and hands-on sessions.</p>
           </div>
         </div>
       </section>
+
+      <div style={{ width: '100%', height: '1px'}}></div> {/* Separation between feature highlight and footer */}
 
       {/* Footer Section */}
       <footer className="footer-section">
@@ -50,9 +55,9 @@ const FeatureHighlight = () => {
                   </a>
                 </li>
               <li>
-                  <a target='_blank' href="https://www.threads.net/@mechacraftofficial">
-                    <FontAwesomeIcon icon={faThreads} className="social-icon" /> {/* Threads Icon */}
-                    <span>Threads</span> {/* Text for accessibility */}
+                  <a target='_blank' href="https://www.instagram.com/mechacraftofficial">
+                    <FontAwesomeIcon icon={faInstagram} className="social-icon" /> {/* Threads Icon */}
+                    <span>Instagram</span> {/* Text for accessibility */}
                   </a>
                 </li>
             </ul>

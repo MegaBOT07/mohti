@@ -5,10 +5,15 @@ html::-webkit-scrollbar {
   height: 0px; /* Hide the horizontal scrollbar */
 }
 
+body, html {
+  background: #fff;
+  color: #111;
+}
+
 .services-container {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #000;
-    color: #fff;
+    background-color: #fff;
+    color: #111;
     padding: 60px 10px 0px 10px; 
   }
   
@@ -18,15 +23,16 @@ html::-webkit-scrollbar {
   }
   
   .services-header h1 {
+    margin-top: 60px;
     font-size: 2.5em;
-    color: #1e90ff; /* Blue color for header */
+    color: #0056b3; /* Blue color for header */
     margin-bottom: 10px;
     animation: fadeInDown 1s ease-out;
   }
   
   .services-header p {
     font-size: 1.1em;
-    color: #ccc;
+    color: #333;
   }
   
   .services-list {
@@ -45,7 +51,7 @@ html::-webkit-scrollbar {
   .service-item {
     display: flex;
     margin-bottom: 30px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #e0e0e0;
     padding-bottom: 20px;
     align-items: center;
     animation: fadeInUp 1s ease-out;
@@ -60,18 +66,20 @@ html::-webkit-scrollbar {
   }
   
   .service-content {
+    border-radius: 8px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
     flex: 1;
     padding: 20px;
   }
   
   .service-content h3 {
     font-size: 1.6em;
-    color: #1e90ff;
+    color: #0056b3;
     margin-bottom: 10px;
   }
   
   .service-content h3 a {
-    color: #1e90ff;
+    color: #0056b3;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -82,7 +90,7 @@ html::-webkit-scrollbar {
   
   .service-content p {
     font-size: 1em;
-    color: #ccc;
+    color: #222;
     line-height: 1.6;
   }
   
@@ -92,12 +100,12 @@ html::-webkit-scrollbar {
   }
   
   .service-image img {
-    max-height: 370px;
-    width: 100%;
+    max-height: 300px;
+    width: 80%;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.08);
     transition: transform 0.3s ease;
-  }
+}
   
   .service-image img:hover {
     transform: scale(1.05);
@@ -111,12 +119,12 @@ html::-webkit-scrollbar {
   
   .services-footer p {
     font-size: 0.9em;
-    color: #ccc;
+    color: #333;
     margin: 5px 0;
   }
   
   .services-footer a {
-    color: #1e90ff;
+    color: #0056b3;
     text-decoration: none;
     transition: color 0.3s ease;
   }
@@ -180,4 +188,300 @@ html::-webkit-scrollbar {
     .service-image {
       margin-bottom: 20px;
     }
+
+    .services-container {
+      background: #fff;
+      color: #111;
+    }
   }
+
+  /* Workshop Section Styles */
+  .mechacraft-workshop-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+    border-radius: 10px;
+  }
+  
+  .mechacraft-workshop-title {
+    color: #0056b3;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .mechacraft-workshop-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mechacraft-workshop-button:hover {
+    background-color: #003d82;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Modal Styles */
+  .mechacraft-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .mechacraft-modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    animation: slideIn 0.3s ease;
+  }
+  
+  .mechacraft-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #666;
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+  }
+  
+  .mechacraft-modal-close:hover {
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  
+  /* Form Styles */
+  .mechacraft-workshop-form {
+    margin-top: 20px;
+  }
+  
+  .mechacraft-form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .mechacraft-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 500;
+  }
+  
+  .mechacraft-form-group input,
+  .mechacraft-form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .mechacraft-form-group input:focus,
+  .mechacraft-form-group textarea:focus {
+    outline: none;
+    border-color: #0056b3;
+  }
+
+.services {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.services__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.services__header h1 {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.services__header p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.service-card {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service-card.reversed {
+  flex-direction: row-reverse;
+}
+
+.service-card__content {
+  flex: 1;
+  padding: 2rem;
+}
+
+.service-card__content h3 {
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  margin-bottom: 1rem;
+}
+
+.service-card__content p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.service-card__link {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.service-card__link:hover {
+  color: #003d82;
+}
+
+.service-card__image {
+  flex: 1;
+  height: 300px;
+}
+
+.service-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.services__workshop {
+  text-align: center;
+  padding: 4rem 0;
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  margin: 4rem 0;
+}
+
+.workshop-button {
+  background: #0056b3;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.workshop-button:hover {
+  background: #003d82;
+  transform: translateY(-2px);
+}
+
+.workshop-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.workshop-modal__content {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+
+.workshop-modal__close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.workshop-form {
+  margin-top: 1.5rem;
+}
+
+.workshop-form__group {
+  margin-bottom: 1.5rem;
+}
+
+.workshop-form__group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.workshop-form__group input,
+.workshop-form__group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.workshop-form__submit {
+  width: 100%;
+  padding: 1rem;
+  background: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .service-card,
+  .service-card.reversed {
+    flex-direction: column;
+  }
+
+  .service-card__image {
+    height: 200px;
+  }
+  
+  .services__header h1 {
+    font-size: 2rem;
+  }
+}
