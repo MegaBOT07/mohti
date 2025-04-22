@@ -33,7 +33,7 @@ We invite schools and colleges to join hands with Mechacraft Technologies to emp
           <div className="footer-item">
             <h2>Address</h2>
             <p>25, Ganesh Nagar Vistar Sodala, Jaipur Rajasthan 302019</p>
-            <p>+91 9983878999</p>
+            <p>+91 7014083670</p>
           </div>
           <div className="footer-item">
             <h2>Join Us</h2>

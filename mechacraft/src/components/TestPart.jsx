@@ -4,35 +4,35 @@ import './TestPart.css'; // Link to the combined CSS file - styles for this sect
 const testimonials = [
   {
     id: 1,
-    image: "https://mechacraft.in/wp-content/uploads/2024/08/Ellipse-20.png",
+    image: "./assets/test1.png",
     message: "The Embedded and IoT training was insightful, with practical exercises that were highly beneficial. It was a superb session with a few areas for enhancement.",
     authorName: "Ajay Dhanopia",
     authorTitle: "Head of Srijan Incubation cell"
   },
   {
     id: 2,
-    image: "https://mechacraft.in/wp-content/uploads/2024/08/Ellipse-21.png",
+    image: "./assets/test2.png",
     message: "The robotics workshop was dynamic and well-structured. The practical exercises were effective, and the instructor was expert and friendly. I’ll definitely recommend to others!",
     authorName: "Dr. Dheeraj Joshi",
     authorTitle: "H.O.D, ME"
   },
   {
     id: 3,
-    image: "https://mechacraft.in/wp-content/uploads/2024/08/Ellipse-22.png",
+    image: "./assets/test1.png",
     message: "The Embedded and IoT training was insightful, with practical exercises that were highly beneficial. It was a superb session with a few areas for enhancement.",
     authorName: "Amit Patel",
     authorTitle: "IoT Engineer"
   },
   {
     id: 4,
-    image: "https://mechacraft.in/wp-content/uploads/2024/08/Ellipse-22.png",
+    image: "./assets/test2.png",
     message: "The robotics workshop was dynamic and well-structured. The practical exercises were effective, and the instructor was expert and friendly. I’ll definitely recommend to others!",
     authorName: "Sneha Verma",
     authorTitle: "Workshop Participant"
   },
   {
     id: 5,
-    image: "https://mechacraft.in/wp-content/uploads/2024/08/Ellipse-22.png",
+    image: "./assets/test1.png",
     message: "The Embedded and IoT training was insightful, with practical exercises that were highly beneficial. It was a superb session with a few areas for enhancement.",
     authorName: "Rajesh Kumar",
     authorTitle: "Embedded Systems Developer"

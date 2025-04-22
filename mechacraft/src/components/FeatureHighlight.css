@@ -26,6 +26,7 @@
 .feature-content {
   flex: 1.5;
   padding: 20px;
+  padding-left: 40px;
 }
 
 .feature-content h1 {
