@@ -37,7 +37,7 @@ We invite schools and colleges to join hands with Mechacraft Technologies to emp
           </div>
           <div className="footer-item">
             <h2>Join Us</h2>
-            <p>Become a part of the MechaCraft community and stay updated with our latest innovations.</p>
+            <p>Become a part of the MechaCraft community and<br /> stay updated with our latest innovations.</p>
           </div>
           <div className="footer-item">
             <h2>Useful Links</h2>

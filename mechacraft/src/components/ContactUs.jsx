@@ -26,30 +26,30 @@ const ContactUs = () => {
           <div className="contact-info">
             <div className="info-item">
               <h3>Address</h3>
-              <p>123 Business Street<br />Tech City, TC 12345</p>
+              <p>25, Ganesh Nagar Vistar Sodala,<br /> Jaipur Rajasthan 302019</p>
             </div>
             <div className="info-item">
               <h3>Phone</h3>
-              <p>+1 (555) 123-4567</p>
+              <p>+91 9983878999</p>
             </div>
             <div className="info-item">
               <h3>Email</h3>
-              <p>info@mechacraft.com</p>
+              <p>mechacrafttechnology@gmail.com</p>
             </div>
             <div className="info-item">
               <h3>Working Hours</h3>
-              <p>Monday - Friday: 9:00 AM - 6:00 PM<br />
+              <p>Monday: Friday: 9:00 AM - 6:00 PM<br />
                  Saturday: 10:00 AM - 2:00 PM<br />
                  Sunday: Closed</p>
             </div>
             <div className="social-icons">
-              <a href="https://linkedin.com/company/mechacraft" target="_blank" rel="noopener noreferrer">
+              <a href="https://in.linkedin.com/company/mechacraft-technologies" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://instagram.com/mechacraft" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.facebook.com/people/MechaCraft-Technologies/61559910946002/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
-              <a href="https://facebook.com/mechacraft" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/mechacraftofficial" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
             </div>

@@ -180,18 +180,129 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contactus-container {
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    overflow-y: auto;
+    max-height: none;
+    padding-bottom: 20px;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  }
+
+  .contactus-content {
+    padding: 0;
+    height: auto;
+    position: relative;
+    overflow: visible;
+  }
+
   .contactus-wrapper {
     flex-direction: column;
+    padding: 20px 15px;
+    width: auto;
+    gap: 25px;
+    margin: 0;
   }
   
   .contact-info,
   .contactus-form {
     flex: none;
+    width: 90%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  .contact-info {
+    margin: 0 15px;
+  }
+
+  .contactus-form {
+    margin: 0 15px;
+    padding: 15px;
+  }
+
+  .name-email-row {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+  .name-email-row label {
     width: 100%;
   }
-  
-  .contactus-container {
-    height: auto;
-    min-height: 100vh;
+
+  .contactus-form input,
+  .contactus-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+
+  .contactus-header {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+
+  .contactus-header h1 {
+    margin-top: 80px;
+    font-size: 1.8em;
+  }
+
+  .contactus-header p {
+    font-size: 0.9em;
+    padding: 0 10px;
+  }
+
+  .info-item {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 8px 0;
+  }
+
+  .info-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+  }
+
+  .info-item p {
+    font-size: 0.9em;
+    line-height: 1.4;
+  }
+
+  .social-icons {
+    justify-content: center;
+    margin: 20px 0;
+    padding: 15px 0;
+  }
+
+  .social-icons a {
+    font-size: 1.5em;
+    padding: 10px;
+  }
+
+  .contactus-form {
+    padding: 20px;
+  }
+
+  .contactus-form label {
+    margin-bottom: 12px;
+  }
+
+  .contactus-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    margin-top: 15px;
+  }
+
+  .contactus-footer {
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 15px 0;
+    margin-top: 20px;
   }
 }

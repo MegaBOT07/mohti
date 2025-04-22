@@ -3,13 +3,14 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
 
-const iotAgricultureImage = "https://media.istockphoto.com/id/1155183548/photo/lawn-mower-and-jerry-can-with-gasoline-on-the-background-of-green-grass.jpg?b=1&s=612x612&w=0&k=20&c=5NZnGGf7x0N7xXSn8T_7FeWWZmsKfUh0ekFKDxQu-Fo=";
-const customSolutionsImage = "https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800";
-const iotConsultingImage = "https://images.pexels.com/photos/9242836/pexels-photo-9242836.jpeg?auto=compress&cs=tinysrgb&w=800";
-const roboticsLabsImage = "https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=800";
-const arVrImage = "https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?auto=compress&cs=tinysrgb&w=800";
-const droneTechImage = "https://images.pexels.com/photos/18660495/pexels-photo-18660495/free-photo-of-view-of-dji-air-3-drone-flying-in-the-forest-in-south-of-france.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500";
-const homeAutomationImage = "https://media.istockphoto.com/id/1014664366/photo/smart-home-automation-remote-control-internet-technology.jpg?b=1&s=612x612&w=0&k=20&c=kb_aNkbmD9qqL43IjaIkGACHkLtYqqkMAEuo-Uc0uxU=";
+const iotAgricultureImage = "./assets/service1.jpeg";
+const customSolutionsImage = "./assets/service2.jpeg";
+const iotConsultingImage = "./assets/service3.jpeg";
+const roboticsLabsImage = "./assets/service4.jpeg";
+const arVrImage = "./assets/service5.jpeg";
+const droneTechImage = "./assets/service6.jpeg";
+const homeAutomationImage = "./assets/service7.jpeg";
+const workshopImage = "./assets/service8.jpeg";
 
 const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -68,7 +69,7 @@ const Services = () => {
       title: "STEM Workshops for School Students",
       description:
         "Empowering young minds through interactive, hands-on learning in robotics, AI, IoT, and coding. By encouraging exploration and creativity, we help students build real-world skills, spark curiosity, and grow their confidence in today’s rapidly evolving tech landscape",
-      image: homeAutomationImage,
+      image: workshopImage,
       alt: "Home Automation",
     },
   ];

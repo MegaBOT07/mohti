@@ -58,7 +58,7 @@ body {
 
 .zero-content p {
     position: relative;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     font-size: 1.5rem;
     color: #ffffff;
@@ -153,7 +153,7 @@ body {
     display: block;
     font-size: 3rem;
     font-weight: bold;
-    background: linear-gradient(45deg, #00ff88, #007bff);
+    background: #1e90ff;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -533,7 +533,9 @@ body {
     .hero-content h1 {
         font-size: 3rem;
     }
-    
+    .text-content {
+        width: 300px;
+    }
     .content-wrap {
         flex-direction: column;
         text-align: center;

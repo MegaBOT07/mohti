@@ -23,7 +23,7 @@ body, html {
   }
   
   .services-header h1 {
-    margin-top: 60px;
+    margin-top: 50px;
     font-size: 2.5em;
     color: #0056b3; /* Blue color for header */
     margin-bottom: 10px;
@@ -178,11 +178,16 @@ body, html {
       flex-direction: column;
     }
   
-    .service-image,
+  
     .service-content {
-      padding:0px;
+      padding: 15px;
       flex: none;
       width: 100%;
+    }
+    .service-image{
+      flex: none;
+      width: 100%;
+      padding: 15px;
     }
   
     .service-image {
@@ -484,4 +489,55 @@ body, html {
   .services__header h1 {
     font-size: 2rem;
   }
+}
+
+/* Updated Services Header Styles */
+.mechacraft-services-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #111;
+    padding-top: 120px; /* Increased padding to account for fixed navbar */
+    min-height: 100vh;
+}
+
+.mechacraft-services-header {
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative;
+    padding: 0 20px;
+}
+
+.mechacraft-services-header h1 {
+    font-size: 2.8rem;
+    color: #0056b3;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+.mechacraft-services-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0;
+}
+
+.mechacraft-services-list {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.mechacraft-services-footer {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.mechacraft-services-footer p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9em;
 }

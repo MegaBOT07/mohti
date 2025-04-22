@@ -22,12 +22,12 @@ const CardsSection = memo(() => {
   // List of card items
   const cardItems = [
     {
-      image: "https://images.pexels.com/photos/4709362/pexels-photo-4709362.jpeg",
+      image: "./assets/1.jpeg",
       alt: "Microcontroller",
       text: "Empower your IoT projects with versatile microcontrollers.",
     },
     {
-      image: "https://images.pexels.com/photos/6153741/pexels-photo-6153741.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      image: "./assets/2.jpeg",
       alt: "Robotics",
       text: "Revolutionize tasks with cutting-edge robotics solutions.",
     },
@@ -37,17 +37,17 @@ const CardsSection = memo(() => {
       text: "Improves efficiency and productivity in farming practices.",
     },
     {
-      image: "https://images.pexels.com/photos/4402618/pexels-photo-4402618.jpeg?cs=srgb&dl=pexels-quirva-4402618.jpg&fm=jpg",
+      image: "./assets/4.jpeg",
       alt: "Drones",
       text: "Innovate with advanced drone technology for various applications.",
     },
     {
-      image: "https://images.pexels.com/photos/1337247/pexels-photo-1337247.jpeg?cs=srgb&dl=pexels-garrettmorrow-1337247.jpg&fm=jpg",
+      image: "./assets/5.jpeg",
       alt: "Gaming",
       text: "Immerse in the future of gaming with our tech solutions.",
     },
     {
-      image: "https://images.pexels.com/photos/8386364/pexels-photo-8386364.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      image: "./assets/6.jpeg",
       alt: "AI Automation",
       text: "Transform industries with AI-driven automation solutions.",
     },

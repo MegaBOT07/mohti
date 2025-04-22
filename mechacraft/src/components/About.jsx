@@ -59,7 +59,7 @@ const About = () => {
                 <img className="background-video" src="./assets/abt.jpeg" alt="" />
                 <div className="zero-content">
                     <h1>About Us</h1>
-                    <p>Mechacraft Technologies is a forward-thinking tech company dedicated to innovation, education, and development in the fields of IoT, Robotics, AI, Embedded Systems, Web Development, and AgriTech. We specialize in offering practical training and workshops tailored to school and college students, aiming to bridge the gap between academic learning and industry skills.</p>
+                    <p>Mechacraft Technologies is a forward-thinking tech company dedicated to innovation, education, and development in the fields of IoT, Robotics, AI, Embedded Systems, Web Development, and AgriTech.</p>
                 </div>
             </div>
 

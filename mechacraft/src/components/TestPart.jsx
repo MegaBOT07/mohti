@@ -78,11 +78,11 @@ const TestimonialsSection1 = () => {
 };
 
 const logos = [
-  'https://mechacraft.in/wp-content/uploads/2024/07/imgbin_jaipur-national-university-jecrc-university-rajasthan-technical-university-skit-college-swami-keshvanand-institute-of-pharmacy-png-4-768x788.png',
-  'https://mechacraft.in/wp-content/uploads/2024/07/srijan-1-768x849.png',
-  'https://mechacraft.in/wp-content/uploads/2024/07/robotics-club-1-1-768x768.png',
-  'https://mechacraft.in/wp-content/uploads/2024/07/mc-global-school.jpeg-768x768.png',
-  'https://mechacraft.in/wp-content/uploads/2024/07/sarthak-iti-1-768x768.png'
+  './assets/partner1.jpeg',
+  './assets/partner2.jpeg',
+  './assets/partner3.jpeg',
+  './assets/partner4.jpeg',
+  './assets/partner5.jpeg',
 ];
 
 const PartnersSection = () => {

@@ -33,7 +33,7 @@ function NavBar() {
   return (
     <nav className="navbar">
       <img
-        src="https://mechacraft.in/wp-content/uploads/2024/07/cropped-1Artboard-1-e1721458606712-1.png"
+        src="./assets/logo.png" // Replace with your logo path
         alt="Logo"
         className="logo"
       />
