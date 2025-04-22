@@ -18,21 +18,21 @@ const testimonials = [
   },
   {
     id: 3,
-    image: "./assets/test1.png",
+    image: "./assets/test3.jpeg",
     message: "The Embedded and IoT training was insightful, with practical exercises that were highly beneficial. It was a superb session with a few areas for enhancement.",
     authorName: "Amit Patel",
     authorTitle: "IoT Engineer"
   },
   {
     id: 4,
-    image: "./assets/test2.png",
+    image: "./assets/test4.jpeg",
     message: "The robotics workshop was dynamic and well-structured. The practical exercises were effective, and the instructor was expert and friendly. I’ll definitely recommend to others!",
     authorName: "Sneha Verma",
     authorTitle: "Workshop Participant"
   },
   {
     id: 5,
-    image: "./assets/test1.png",
+    image: "./assets/test5.jpeg",
     message: "The Embedded and IoT training was insightful, with practical exercises that were highly beneficial. It was a superb session with a few areas for enhancement.",
     authorName: "Rajesh Kumar",
     authorTitle: "Embedded Systems Developer"
