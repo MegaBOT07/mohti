@@ -1,6 +1,7 @@
 // Services.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import emailjs from '@emailjs/browser';
 import "./Services.css";
 
 const iotAgricultureImage = "./assets/service1.jpeg";
@@ -14,6 +15,11 @@ const workshopImage = "./assets/service8.jpeg";
 
 const Services = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your actual public key
+  }, []);
 
   const services = [
     {
@@ -74,14 +80,35 @@ const Services = () => {
     },
   ];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
-    console.log("Custom Workshop Request Data:", data);
-    alert("Your request has been submitted successfully!");
-    e.target.reset();
-    setIsModalOpen(false);
+    
+    try {
+      const response = await emailjs.send(
+        'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+        'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+        {
+          name: data.name,
+          email: data.email,
+          phone: data.phone,
+          organization: data.organization,
+          details: data.details,
+        }
+      );
+
+      if (response.status === 200) {
+        alert('Your workshop request has been submitted successfully!');
+        e.target.reset();
+        setIsModalOpen(false);
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error submitting your request. Please try again later.');
+    }
   };
 
   return (

@@ -1,17 +1,42 @@
-import React, { useState } from "react";
-import "./ContactUs.css";
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import React from 'react';
+import './ContactUs.css';
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
 
 const ContactUs = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [subject, setSubject] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    alert("Thank you for your message!");
-    // You can add logic here to send the form data
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData.entries());
+    
+    try {
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: 'YOUR_SERVICE_ID', // Replace with your EmailJS service ID
+          template_id: 'YOUR_TEMPLATE_ID', // Replace with your EmailJS template ID
+          user_id: 'YOUR_USER_ID', // Replace with your EmailJS user ID
+          template_params: {
+            name: data.name,
+            email: data.email,
+            subject: data.subject,
+            message: data.message,
+          }
+        }),
+      });
+
+      if (response.ok) {
+        alert('Your message has been sent successfully!');
+        e.target.reset();
+      } else {
+        throw new Error('Failed to send email');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error sending your message. Please try again later.');
+    }
   };
 
   return (
@@ -19,90 +44,57 @@ const ContactUs = () => {
       <div className="contactus-content">
         <header className="contactus-header">
           <h1>Contact Us</h1>
-          <p>We'd love to hear from you!</p>
+          <p>Get in touch with us for any questions or inquiries</p>
         </header>
 
         <div className="contactus-wrapper">
           <div className="contact-info">
             <div className="info-item">
-              <h3>Address</h3>
-              <p>25, Ganesh Nagar Vistar Sodala,<br /> Jaipur Rajasthan 302019</p>
+              <h3><FaPhone /> Phone</h3>
+              <p>+91 1234567890</p>
             </div>
             <div className="info-item">
-              <h3>Phone</h3>
-              <p>+91 93763 88157</p>
+              <h3><FaEnvelope /> Email</h3>
+              <p>info@mechacraft.com</p>
             </div>
             <div className="info-item">
-              <h3>Email</h3>
-              <p>mechacrafttechnology@gmail.com</p>
-            </div>
-            <div className="info-item">
-              <h3>Working Hours</h3>
-              <p>Monday: Friday: 9:00 AM - 6:00 PM<br />
-                 Saturday: 10:00 AM - 2:00 PM<br />
-                 Sunday: Closed</p>
+              <h3><FaMapMarkerAlt /> Address</h3>
+              <p>123 Tech Street, Innovation Hub,<br />Bangalore, Karnataka 560001</p>
             </div>
             <div className="social-icons">
-              <a href="https://in.linkedin.com/company/mechacraft-technologies" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin />
-              </a>
-              <a href="https://www.facebook.com/people/MechaCraft-Technologies/61559910946002/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram />
-              </a>
-              <a href="https://www.instagram.com/mechacraftofficial" target="_blank" rel="noopener noreferrer">
-                <FaFacebook />
-              </a>
+              <a href="#"><FaFacebook /></a>
+              <a href="#"><FaTwitter /></a>
+              <a href="#"><FaLinkedin /></a>
+              <a href="#"><FaInstagram /></a>
             </div>
           </div>
 
           <form className="contactus-form" onSubmit={handleSubmit}>
             <div className="name-email-row">
               <label>
-                Name:
-                <input
-                  type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
-                  required
-                  placeholder="Enter your full name"
-                />
+                Name
+                <input type="text" name="name" required placeholder="Your Name" />
               </label>
               <label>
-                Email:
-                <input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  placeholder="Enter your email address"
-                />
+                Email
+                <input type="email" name="email" required placeholder="Your Email" />
               </label>
             </div>
             <label>
-              Subject:
-              <input
-                type="text"
-                value={subject}
-                onChange={(e) => setSubject(e.target.value)}
-                required
-                placeholder="What is your message about?"
-              />
+              Subject
+              <input type="text" name="subject" required placeholder="Subject" />
             </label>
             <label>
-              Message:
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                required
-                placeholder="Write your message here..."
-              ></textarea>
+              Message
+              <textarea name="message" required placeholder="Your Message"></textarea>
             </label>
-            <button type="submit">Submit</button>
+            <button type="submit">Send Message</button>
           </form>
         </div>
       </div>
+
       <footer className="contactus-footer">
-        <p>&copy; 2025 MechaCraft. All rights reserved.</p>
+        <p>&copy; 2025 Mechacraft. All rights reserved.</p>
       </footer>
     </div>
   );

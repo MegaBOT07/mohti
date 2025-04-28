@@ -249,15 +249,16 @@ body, html {
   }
   
   .mechacraft-modal-content {
-    background: white;
+    background: #d8d8d8;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 8px;
     width: 90%;
     max-width: 600px;
     max-height: 90vh;
     overflow-y: auto;
     position: relative;
     animation: slideIn 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   .mechacraft-modal-close {
@@ -281,35 +282,72 @@ body, html {
   
   /* Form Styles */
   .mechacraft-workshop-form {
-    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
   
   .mechacraft-form-group {
-    margin-bottom: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
   }
   
   .mechacraft-form-group label {
-    display: block;
-    margin-bottom: 8px;
+    font-weight: 600;
     color: #333;
-    font-weight: 500;
+    font-size: 0.9em;
+    margin-bottom: 5px;
   }
   
   .mechacraft-form-group input,
   .mechacraft-form-group textarea {
     width: 100%;
-    padding: 12px;
+    padding: 10px;
+    border-radius: 4px;
     border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1em;
-    transition: border-color 0.3s ease;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 0.9em;
   }
   
-  .mechacraft-form-group input:focus,
-  .mechacraft-form-group textarea:focus {
-    outline: none;
-    border-color: #0056b3;
+  .mechacraft-form-group textarea {
+    height: 120px;
+    resize: none;
+  }
+  
+  .mechacraft-submit-button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    align-self: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .mechacraft-submit-button:hover {
+    background-color: #1976d2;
+  }
+  
+  @media (max-width: 768px) {
+    .mechacraft-modal-content {
+      width: 95%;
+      padding: 20px;
+      margin: 10px;
+    }
+  
+    .mechacraft-form-group input,
+    .mechacraft-form-group textarea {
+      font-size: 16px;
+      padding: 12px;
+    }
+  
+    .mechacraft-submit-button {
+      width: 100%;
+      padding: 15px;
+    }
   }
 
 .services {
