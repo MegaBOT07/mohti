@@ -1,7 +1,6 @@
 // Services.js
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import emailjs from '@emailjs/browser';
 import "./Services.css";
 
 const iotAgricultureImage = "./assets/service1.jpeg";
