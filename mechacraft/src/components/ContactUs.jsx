@@ -51,15 +51,15 @@ const ContactUs = () => {
           <div className="contact-info">
             <div className="info-item">
               <h3><FaPhone /> Phone</h3>
-              <p>+91 1234567890</p>
+              <p>+91 9376388157</p>
             </div>
             <div className="info-item">
               <h3><FaEnvelope /> Email</h3>
-              <p>info@mechacraft.com</p>
+              <p>Mechacrafttechnologies@gmail.com</p>
             </div>
             <div className="info-item">
               <h3><FaMapMarkerAlt /> Address</h3>
-              <p>123 Tech Street, Innovation Hub,<br />Bangalore, Karnataka 560001</p>
+              <p>25, Ganesh Nagar Vistar Sodala,<br />Jaipur Rajasthan 302019</p>
             </div>
             <div className="social-icons">
               <a href="#"><FaFacebook /></a>
